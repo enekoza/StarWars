@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB159AC8192CE0AD00E98105 /* EZVCharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB159AC6192CE0AD00E98105 /* EZVCharacterViewController.m */; };
+		DB159AC9192CE0AD00E98105 /* EZVCharacterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB159AC7192CE0AD00E98105 /* EZVCharacterViewController.xib */; };
+		DB159ACD192CEB1D00E98105 /* EZVCharacterWikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB159ACB192CEB1D00E98105 /* EZVCharacterWikiViewController.m */; };
+		DB159ACE192CEB1D00E98105 /* EZVCharacterWikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB159ACC192CEB1D00E98105 /* EZVCharacterWikiViewController.xib */; };
+		DB159AD3192CF49B00E98105 /* CafPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB159AD1192CF42D00E98105 /* CafPlayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DB38AB4D192CB148005EF81B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB38AB4C192CB148005EF81B /* Foundation.framework */; };
+		DB38AB4F192CB148005EF81B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB38AB4E192CB148005EF81B /* CoreGraphics.framework */; };
+		DB38AB51192CB148005EF81B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB38AB50192CB148005EF81B /* UIKit.framework */; };
+		DB38AB57192CB148005EF81B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB55192CB148005EF81B /* InfoPlist.strings */; };
+		DB38AB59192CB148005EF81B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB38AB58192CB148005EF81B /* main.m */; };
+		DB38AB5D192CB148005EF81B /* EZVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB38AB5C192CB148005EF81B /* EZVAppDelegate.m */; };
+		DB38AB5F192CB148005EF81B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB5E192CB148005EF81B /* Images.xcassets */; };
+		DB38AB66192CB148005EF81B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB38AB65192CB148005EF81B /* XCTest.framework */; };
+		DB38AB67192CB148005EF81B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB38AB4C192CB148005EF81B /* Foundation.framework */; };
+		DB38AB68192CB148005EF81B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB38AB50192CB148005EF81B /* UIKit.framework */; };
+		DB38AB70192CB148005EF81B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB6E192CB148005EF81B /* InfoPlist.strings */; };
+		DB38AB72192CB148005EF81B /* StarWarsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB38AB71192CB148005EF81B /* StarWarsTests.m */; };
+		DB38AB91192CC399005EF81B /* c3po.caf in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB81192CC399005EF81B /* c3po.caf */; };
+		DB38AB92192CC399005EF81B /* c3po.caf in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB81192CC399005EF81B /* c3po.caf */; };
+		DB38AB93192CC399005EF81B /* c3po.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB82192CC399005EF81B /* c3po.jpg */; };
+		DB38AB94192CC399005EF81B /* c3po.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB82192CC399005EF81B /* c3po.jpg */; };
+		DB38AB95192CC399005EF81B /* chewbacca.caf in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB83192CC399005EF81B /* chewbacca.caf */; };
+		DB38AB96192CC399005EF81B /* chewbacca.caf in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB83192CC399005EF81B /* chewbacca.caf */; };
+		DB38AB97192CC399005EF81B /* chewbacca.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB84192CC399005EF81B /* chewbacca.jpg */; };
+		DB38AB98192CC399005EF81B /* chewbacca.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB84192CC399005EF81B /* chewbacca.jpg */; };
+		DB38AB99192CC399005EF81B /* darthVader.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB85192CC399005EF81B /* darthVader.jpg */; };
+		DB38AB9A192CC399005EF81B /* darthVader.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB85192CC399005EF81B /* darthVader.jpg */; };
+		DB38AB9B192CC399005EF81B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB86192CC399005EF81B /* icon.png */; };
+		DB38AB9C192CC399005EF81B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB86192CC399005EF81B /* icon.png */; };
+		DB38AB9D192CC399005EF81B /* iconSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB87192CC399005EF81B /* iconSmall.png */; };
+		DB38AB9E192CC399005EF81B /* iconSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB87192CC399005EF81B /* iconSmall.png */; };
+		DB38AB9F192CC399005EF81B /* palpatine.caf in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB88192CC399005EF81B /* palpatine.caf */; };
+		DB38ABA0192CC399005EF81B /* palpatine.caf in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB88192CC399005EF81B /* palpatine.caf */; };
+		DB38ABA1192CC399005EF81B /* palpatine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB89192CC399005EF81B /* palpatine.jpg */; };
+		DB38ABA2192CC399005EF81B /* palpatine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB89192CC399005EF81B /* palpatine.jpg */; };
+		DB38ABA3192CC399005EF81B /* r2-d2.caf in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB8A192CC399005EF81B /* r2-d2.caf */; };
+		DB38ABA4192CC399005EF81B /* r2-d2.caf in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB8A192CC399005EF81B /* r2-d2.caf */; };
+		DB38ABA5192CC399005EF81B /* R2-D2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB8B192CC399005EF81B /* R2-D2.jpg */; };
+		DB38ABA6192CC399005EF81B /* R2-D2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB8B192CC399005EF81B /* R2-D2.jpg */; };
+		DB38ABA7192CC399005EF81B /* tarkin.caf in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB8C192CC399005EF81B /* tarkin.caf */; };
+		DB38ABA8192CC399005EF81B /* tarkin.caf in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB8C192CC399005EF81B /* tarkin.caf */; };
+		DB38ABA9192CC399005EF81B /* tarkin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB8D192CC399005EF81B /* tarkin.jpg */; };
+		DB38ABAA192CC399005EF81B /* tarkin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB8D192CC399005EF81B /* tarkin.jpg */; };
+		DB38ABAB192CC399005EF81B /* vader.caf in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB8E192CC399005EF81B /* vader.caf */; };
+		DB38ABAC192CC399005EF81B /* vader.caf in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB8E192CC399005EF81B /* vader.caf */; };
+		DB38ABAD192CC399005EF81B /* yoda.caf in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB8F192CC399005EF81B /* yoda.caf */; };
+		DB38ABAE192CC399005EF81B /* yoda.caf in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB8F192CC399005EF81B /* yoda.caf */; };
+		DB38ABAF192CC399005EF81B /* yoda.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB90192CC399005EF81B /* yoda.jpg */; };
+		DB38ABB0192CC399005EF81B /* yoda.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB38AB90192CC399005EF81B /* yoda.jpg */; };
+		DB38ABB4192CC47E005EF81B /* EZVCharacterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB38ABB3192CC47E005EF81B /* EZVCharacterModel.m */; };
+		DB38ABB5192CC47E005EF81B /* EZVCharacterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB38ABB3192CC47E005EF81B /* EZVCharacterModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB38AB69192CB148005EF81B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB38AB41192CB148005EF81B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB38AB48192CB148005EF81B;
+			remoteInfo = StarWars;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB159AC5192CE0AD00E98105 /* EZVCharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZVCharacterViewController.h; sourceTree = "<group>"; };
+		DB159AC6192CE0AD00E98105 /* EZVCharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZVCharacterViewController.m; sourceTree = "<group>"; };
+		DB159AC7192CE0AD00E98105 /* EZVCharacterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EZVCharacterViewController.xib; sourceTree = "<group>"; };
+		DB159ACA192CEB1D00E98105 /* EZVCharacterWikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZVCharacterWikiViewController.h; sourceTree = "<group>"; };
+		DB159ACB192CEB1D00E98105 /* EZVCharacterWikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZVCharacterWikiViewController.m; sourceTree = "<group>"; };
+		DB159ACC192CEB1D00E98105 /* EZVCharacterWikiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EZVCharacterWikiViewController.xib; sourceTree = "<group>"; };
+		DB159AD0192CF42D00E98105 /* CafPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CafPlayer.h; sourceTree = "<group>"; };
+		DB159AD1192CF42D00E98105 /* CafPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CafPlayer.m; sourceTree = "<group>"; };
+		DB38AB49192CB148005EF81B /* StarWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB38AB4C192CB148005EF81B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DB38AB4E192CB148005EF81B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DB38AB50192CB148005EF81B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DB38AB54192CB148005EF81B /* StarWars-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StarWars-Info.plist"; sourceTree = "<group>"; };
+		DB38AB56192CB148005EF81B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DB38AB58192CB148005EF81B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB38AB5A192CB148005EF81B /* StarWars-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StarWars-Prefix.pch"; sourceTree = "<group>"; };
+		DB38AB5B192CB148005EF81B /* EZVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EZVAppDelegate.h; sourceTree = "<group>"; };
+		DB38AB5C192CB148005EF81B /* EZVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EZVAppDelegate.m; sourceTree = "<group>"; };
+		DB38AB5E192CB148005EF81B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DB38AB64192CB148005EF81B /* StarWarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB38AB65192CB148005EF81B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DB38AB6D192CB148005EF81B /* StarWarsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StarWarsTests-Info.plist"; sourceTree = "<group>"; };
+		DB38AB6F192CB148005EF81B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DB38AB71192CB148005EF81B /* StarWarsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarWarsTests.m; sourceTree = "<group>"; };
+		DB38AB81192CC399005EF81B /* c3po.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = c3po.caf; sourceTree = "<group>"; };
+		DB38AB82192CC399005EF81B /* c3po.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c3po.jpg; sourceTree = "<group>"; };
+		DB38AB83192CC399005EF81B /* chewbacca.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chewbacca.caf; sourceTree = "<group>"; };
+		DB38AB84192CC399005EF81B /* chewbacca.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chewbacca.jpg; sourceTree = "<group>"; };
+		DB38AB85192CC399005EF81B /* darthVader.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darthVader.jpg; sourceTree = "<group>"; };
+		DB38AB86192CC399005EF81B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		DB38AB87192CC399005EF81B /* iconSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconSmall.png; sourceTree = "<group>"; };
+		DB38AB88192CC399005EF81B /* palpatine.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = palpatine.caf; sourceTree = "<group>"; };
+		DB38AB89192CC399005EF81B /* palpatine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = palpatine.jpg; sourceTree = "<group>"; };
+		DB38AB8A192CC399005EF81B /* r2-d2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "r2-d2.caf"; sourceTree = "<group>"; };
+		DB38AB8B192CC399005EF81B /* R2-D2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "R2-D2.jpg"; sourceTree = "<group>"; };
+		DB38AB8C192CC399005EF81B /* tarkin.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tarkin.caf; sourceTree = "<group>"; };
+		DB38AB8D192CC399005EF81B /* tarkin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tarkin.jpg; sourceTree = "<group>"; };
+		DB38AB8E192CC399005EF81B /* vader.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = vader.caf; sourceTree = "<group>"; };
+		DB38AB8F192CC399005EF81B /* yoda.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = yoda.caf; sourceTree = "<group>"; };
+		DB38AB90192CC399005EF81B /* yoda.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yoda.jpg; sourceTree = "<group>"; };
+		DB38ABB2192CC47E005EF81B /* EZVCharacterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZVCharacterModel.h; sourceTree = "<group>"; };
+		DB38ABB3192CC47E005EF81B /* EZVCharacterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZVCharacterModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB38AB46192CB148005EF81B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB38AB4F192CB148005EF81B /* CoreGraphics.framework in Frameworks */,
+				DB38AB51192CB148005EF81B /* UIKit.framework in Frameworks */,
+				DB38AB4D192CB148005EF81B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB38AB61192CB148005EF81B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB38AB66192CB148005EF81B /* XCTest.framework in Frameworks */,
+				DB38AB68192CB148005EF81B /* UIKit.framework in Frameworks */,
+				DB38AB67192CB148005EF81B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB159AC4192CDFAA00E98105 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB159AC5192CE0AD00E98105 /* EZVCharacterViewController.h */,
+				DB159AC6192CE0AD00E98105 /* EZVCharacterViewController.m */,
+				DB159AC7192CE0AD00E98105 /* EZVCharacterViewController.xib */,
+				DB159ACA192CEB1D00E98105 /* EZVCharacterWikiViewController.h */,
+				DB159ACB192CEB1D00E98105 /* EZVCharacterWikiViewController.m */,
+				DB159ACC192CEB1D00E98105 /* EZVCharacterWikiViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DB159ACF192CF40D00E98105 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				DB159AD0192CF42D00E98105 /* CafPlayer.h */,
+				DB159AD1192CF42D00E98105 /* CafPlayer.m */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+		DB38AB40192CB148005EF81B = {
+			isa = PBXGroup;
+			children = (
+				DB159ACF192CF40D00E98105 /* Sound */,
+				DB159AC4192CDFAA00E98105 /* Controllers */,
+				DB38ABB1192CC43F005EF81B /* Modelo */,
+				DB38AB52192CB148005EF81B /* StarWars */,
+				DB38AB6B192CB148005EF81B /* StarWarsTests */,
+				DB38AB4B192CB148005EF81B /* Frameworks */,
+				DB38AB4A192CB148005EF81B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB38AB4A192CB148005EF81B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB38AB49192CB148005EF81B /* StarWars.app */,
+				DB38AB64192CB148005EF81B /* StarWarsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB38AB4B192CB148005EF81B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB38AB4C192CB148005EF81B /* Foundation.framework */,
+				DB38AB4E192CB148005EF81B /* CoreGraphics.framework */,
+				DB38AB50192CB148005EF81B /* UIKit.framework */,
+				DB38AB65192CB148005EF81B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB38AB52192CB148005EF81B /* StarWars */ = {
+			isa = PBXGroup;
+			children = (
+				DB38AB80192CC399005EF81B /* resources */,
+				DB38AB5B192CB148005EF81B /* EZVAppDelegate.h */,
+				DB38AB5C192CB148005EF81B /* EZVAppDelegate.m */,
+				DB38AB5E192CB148005EF81B /* Images.xcassets */,
+				DB38AB53192CB148005EF81B /* Supporting Files */,
+			);
+			path = StarWars;
+			sourceTree = "<group>";
+		};
+		DB38AB53192CB148005EF81B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB38AB54192CB148005EF81B /* StarWars-Info.plist */,
+				DB38AB55192CB148005EF81B /* InfoPlist.strings */,
+				DB38AB58192CB148005EF81B /* main.m */,
+				DB38AB5A192CB148005EF81B /* StarWars-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB38AB6B192CB148005EF81B /* StarWarsTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB38AB71192CB148005EF81B /* StarWarsTests.m */,
+				DB38AB6C192CB148005EF81B /* Supporting Files */,
+			);
+			path = StarWarsTests;
+			sourceTree = "<group>";
+		};
+		DB38AB6C192CB148005EF81B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB38AB6D192CB148005EF81B /* StarWarsTests-Info.plist */,
+				DB38AB6E192CB148005EF81B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB38AB80192CC399005EF81B /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				DB38AB81192CC399005EF81B /* c3po.caf */,
+				DB38AB82192CC399005EF81B /* c3po.jpg */,
+				DB38AB83192CC399005EF81B /* chewbacca.caf */,
+				DB38AB84192CC399005EF81B /* chewbacca.jpg */,
+				DB38AB85192CC399005EF81B /* darthVader.jpg */,
+				DB38AB86192CC399005EF81B /* icon.png */,
+				DB38AB87192CC399005EF81B /* iconSmall.png */,
+				DB38AB88192CC399005EF81B /* palpatine.caf */,
+				DB38AB89192CC399005EF81B /* palpatine.jpg */,
+				DB38AB8A192CC399005EF81B /* r2-d2.caf */,
+				DB38AB8B192CC399005EF81B /* R2-D2.jpg */,
+				DB38AB8C192CC399005EF81B /* tarkin.caf */,
+				DB38AB8D192CC399005EF81B /* tarkin.jpg */,
+				DB38AB8E192CC399005EF81B /* vader.caf */,
+				DB38AB8F192CC399005EF81B /* yoda.caf */,
+				DB38AB90192CC399005EF81B /* yoda.jpg */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		DB38ABB1192CC43F005EF81B /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				DB38ABB2192CC47E005EF81B /* EZVCharacterModel.h */,
+				DB38ABB3192CC47E005EF81B /* EZVCharacterModel.m */,
+			);
+			name = Modelo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB38AB48192CB148005EF81B /* StarWars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB38AB75192CB148005EF81B /* Build configuration list for PBXNativeTarget "StarWars" */;
+			buildPhases = (
+				DB38AB45192CB148005EF81B /* Sources */,
+				DB38AB46192CB148005EF81B /* Frameworks */,
+				DB38AB47192CB148005EF81B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarWars;
+			productName = StarWars;
+			productReference = DB38AB49192CB148005EF81B /* StarWars.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB38AB63192CB148005EF81B /* StarWarsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB38AB78192CB148005EF81B /* Build configuration list for PBXNativeTarget "StarWarsTests" */;
+			buildPhases = (
+				DB38AB60192CB148005EF81B /* Sources */,
+				DB38AB61192CB148005EF81B /* Frameworks */,
+				DB38AB62192CB148005EF81B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB38AB6A192CB148005EF81B /* PBXTargetDependency */,
+			);
+			name = StarWarsTests;
+			productName = StarWarsTests;
+			productReference = DB38AB64192CB148005EF81B /* StarWarsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB38AB41192CB148005EF81B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EZV;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Eurohelp;
+				TargetAttributes = {
+					DB38AB63192CB148005EF81B = {
+						TestTargetID = DB38AB48192CB148005EF81B;
+					};
+				};
+			};
+			buildConfigurationList = DB38AB44192CB148005EF81B /* Build configuration list for PBXProject "StarWars" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DB38AB40192CB148005EF81B;
+			productRefGroup = DB38AB4A192CB148005EF81B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB38AB48192CB148005EF81B /* StarWars */,
+				DB38AB63192CB148005EF81B /* StarWarsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB38AB47192CB148005EF81B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB38ABA1192CC399005EF81B /* palpatine.jpg in Resources */,
+				DB38AB95192CC399005EF81B /* chewbacca.caf in Resources */,
+				DB38AB9D192CC399005EF81B /* iconSmall.png in Resources */,
+				DB38ABAB192CC399005EF81B /* vader.caf in Resources */,
+				DB38ABAF192CC399005EF81B /* yoda.jpg in Resources */,
+				DB38ABAD192CC399005EF81B /* yoda.caf in Resources */,
+				DB38ABA7192CC399005EF81B /* tarkin.caf in Resources */,
+				DB38AB99192CC399005EF81B /* darthVader.jpg in Resources */,
+				DB38AB93192CC399005EF81B /* c3po.jpg in Resources */,
+				DB38AB91192CC399005EF81B /* c3po.caf in Resources */,
+				DB38AB9B192CC399005EF81B /* icon.png in Resources */,
+				DB38AB57192CB148005EF81B /* InfoPlist.strings in Resources */,
+				DB38ABA3192CC399005EF81B /* r2-d2.caf in Resources */,
+				DB38AB5F192CB148005EF81B /* Images.xcassets in Resources */,
+				DB38AB97192CC399005EF81B /* chewbacca.jpg in Resources */,
+				DB38ABA5192CC399005EF81B /* R2-D2.jpg in Resources */,
+				DB159ACE192CEB1D00E98105 /* EZVCharacterWikiViewController.xib in Resources */,
+				DB159AC9192CE0AD00E98105 /* EZVCharacterViewController.xib in Resources */,
+				DB38AB9F192CC399005EF81B /* palpatine.caf in Resources */,
+				DB38ABA9192CC399005EF81B /* tarkin.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB38AB62192CB148005EF81B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB38ABAA192CC399005EF81B /* tarkin.jpg in Resources */,
+				DB38AB70192CB148005EF81B /* InfoPlist.strings in Resources */,
+				DB38AB9C192CC399005EF81B /* icon.png in Resources */,
+				DB38ABB0192CC399005EF81B /* yoda.jpg in Resources */,
+				DB38AB9E192CC399005EF81B /* iconSmall.png in Resources */,
+				DB38ABA6192CC399005EF81B /* R2-D2.jpg in Resources */,
+				DB38AB94192CC399005EF81B /* c3po.jpg in Resources */,
+				DB38AB9A192CC399005EF81B /* darthVader.jpg in Resources */,
+				DB38ABA8192CC399005EF81B /* tarkin.caf in Resources */,
+				DB38ABA0192CC399005EF81B /* palpatine.caf in Resources */,
+				DB38ABA2192CC399005EF81B /* palpatine.jpg in Resources */,
+				DB38ABAC192CC399005EF81B /* vader.caf in Resources */,
+				DB38AB98192CC399005EF81B /* chewbacca.jpg in Resources */,
+				DB38ABA4192CC399005EF81B /* r2-d2.caf in Resources */,
+				DB38ABAE192CC399005EF81B /* yoda.caf in Resources */,
+				DB38AB96192CC399005EF81B /* chewbacca.caf in Resources */,
+				DB38AB92192CC399005EF81B /* c3po.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB38AB45192CB148005EF81B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB159AD3192CF49B00E98105 /* CafPlayer.m in Sources */,
+				DB159AC8192CE0AD00E98105 /* EZVCharacterViewController.m in Sources */,
+				DB38ABB4192CC47E005EF81B /* EZVCharacterModel.m in Sources */,
+				DB38AB5D192CB148005EF81B /* EZVAppDelegate.m in Sources */,
+				DB159ACD192CEB1D00E98105 /* EZVCharacterWikiViewController.m in Sources */,
+				DB38AB59192CB148005EF81B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB38AB60192CB148005EF81B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB38AB72192CB148005EF81B /* StarWarsTests.m in Sources */,
+				DB38ABB5192CC47E005EF81B /* EZVCharacterModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB38AB6A192CB148005EF81B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB38AB48192CB148005EF81B /* StarWars */;
+			targetProxy = DB38AB69192CB148005EF81B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB38AB55192CB148005EF81B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB38AB56192CB148005EF81B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DB38AB6E192CB148005EF81B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB38AB6F192CB148005EF81B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB38AB73192CB148005EF81B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB38AB74192CB148005EF81B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB38AB76192CB148005EF81B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StarWars/StarWars-Prefix.pch";
+				INFOPLIST_FILE = "StarWars/StarWars-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DB38AB77192CB148005EF81B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StarWars/StarWars-Prefix.pch";
+				INFOPLIST_FILE = "StarWars/StarWars-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DB38AB79192CB148005EF81B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StarWars.app/StarWars";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StarWars/StarWars-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "StarWarsTests/StarWarsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DB38AB7A192CB148005EF81B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StarWars.app/StarWars";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StarWars/StarWars-Prefix.pch";
+				INFOPLIST_FILE = "StarWarsTests/StarWarsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB38AB44192CB148005EF81B /* Build configuration list for PBXProject "StarWars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB38AB73192CB148005EF81B /* Debug */,
+				DB38AB74192CB148005EF81B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB38AB75192CB148005EF81B /* Build configuration list for PBXNativeTarget "StarWars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB38AB76192CB148005EF81B /* Debug */,
+				DB38AB77192CB148005EF81B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB38AB78192CB148005EF81B /* Build configuration list for PBXNativeTarget "StarWarsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB38AB79192CB148005EF81B /* Debug */,
+				DB38AB7A192CB148005EF81B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB38AB41192CB148005EF81B /* Project object */;
+}
